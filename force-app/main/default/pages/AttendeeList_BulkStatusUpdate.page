@@ -1,0 +1,3 @@
+<apex:page standardController="Attendant__c" extensions="AttendeeListController" recordSetVar="attendees" action="{!redirectToLC}">
+<!-- Decided to use VF with StandardSetController to get list of IDs of records selcted -->
+</apex:page>

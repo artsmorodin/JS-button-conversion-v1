@@ -1,0 +1,10 @@
+<aura:component implements="lightning:isUrlAddressable,force:lightningQuickAction">
+    <aura:attribute name="listofInvitees" type="String" />
+    <aura:attribute name="attStatus" type="String" default="Attended"/>
+    <aura:handler name="init" value="{!this}" action="{!c.onPageReferenceChange}"/>
+
+    <div class="slds-is-relative" style="height:200px">
+        <c:attendeeUpdateStatusLWC idList="{!v.listofInvitees}" retUrl="{!v.retURL}" status="{!v.attStatus}"></c:attendeeUpdateStatusLWC>
+    	<lightning:spinner alternativeText="Loading" size="medium" variant="brand" />
+    </div>
+</aura:component>
